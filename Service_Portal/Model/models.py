@@ -3,9 +3,8 @@ from django.db import models
 class Oem(models.Model):
     oem = models.CharField(max_length=100)
 
-    
     class  Meta:  
-         verbose_name_plural  =  "OEM1" 
+         verbose_name_plural  =  "OEM" 
 
     def __str__(self):
         return self.oem
