@@ -5,7 +5,7 @@ class Oem(models.Model):
 
     
     class  Meta:  
-        verbose_name_plural  =  "OEM1"  
+         verbose_name_plural  =  "OEM" 
 
     def __str__(self):
         return self.oem
