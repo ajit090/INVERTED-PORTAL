@@ -75,17 +75,16 @@ WSGI_APPLICATION = 'Service_Portal.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
-'''DATABASES = {
+DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'service',
         'HOST': 'database.c3v0b3tmg0pr.ap-south-1.rds.amazonaws.com',
         'USER': 'admin',
         'PASSWORD': 'Ajit7595',
-        'HOST': 'database.c3v0b3tmg0pr.ap-south-1.rds.amazonaws.com',
         'PORT': '3306',
             }
-}'''
+}
 
 
 # Password validation
