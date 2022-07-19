@@ -25,7 +25,7 @@ SECRET_KEY = '#w)%48nkd40z=n*u#5%$&nb%2*$knd9ba_$orcv&7=iq3ukfo9'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1','Portal-env.eba-kwuxztpv.ap-south-1.elasticbeanstalk.com']
+ALLOWED_HOSTS = ['127.0.0.1','Invertedserviceportal-env.eba-ibzbuxgs.ap-south-1.elasticbeanstalk.com']
 
 
 # Application definition
@@ -74,17 +74,16 @@ WSGI_APPLICATION = 'Service_Portal.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'Ajit12',
+        'NAME': 'service',
+        'HOST': 'database.c3v0b3tmg0pr.ap-south-1.rds.amazonaws.com',
+        'USER': 'admin',
         'PASSWORD': 'Ajit7595',
-        'HOST': '127.0.0.1',
+        'HOST': 'database.c3v0b3tmg0pr.ap-south-1.rds.amazonaws.com',
         'PORT': '3306',
-        'USER': 'root',
-        'OPTIONS': {
-            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
-         }
             }
 }
 
