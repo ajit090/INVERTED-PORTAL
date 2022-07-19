@@ -25,7 +25,7 @@ SECRET_KEY = '#w)%48nkd40z=n*u#5%$&nb%2*$knd9ba_$orcv&7=iq3ukfo9'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['Invertedserviceportal-env.eba-ibzbuxgs.ap-south-1.elasticbeanstalk.com']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
