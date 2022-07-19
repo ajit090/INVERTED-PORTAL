@@ -66,8 +66,8 @@ class Client(models.Model):
 
     def __str__(self):
         return self.client_name
+'''
+class Complaint(models.Model):
 
-
-    
-
+'''
 
