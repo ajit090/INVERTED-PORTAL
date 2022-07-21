@@ -9,6 +9,6 @@ urlpatterns = [
     path('detail/<int:pk>/',ComplaintDetail.as_view()),
     path('Battery/',BatteryAPIView.as_view()),
     path('detail2/<int:pk>/',BatteryDetail.as_view()),
-    path('customerissues/',CustomerList.as_view()),
+    path('customerissue/',CustomerList.as_view()),
 
 ]
