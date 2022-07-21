@@ -6,7 +6,7 @@ class BatteryAdmin(admin.ModelAdmin):
     list_display=('serial_no','specification','battery_type','oem','short_cell_description','long_cell_description','bms_specification')
     list_filter = ['serial_no','oem']
 
-class ComplaintAdmin(ImportExportModelAdmin,admin.ModelAdmin):
+class ComplaintAdmin(admin.ModelAdmin):
     list_display = ('created_by','assign_by','complaint_id','customer_issue')
     list_filter = ['complaint_id']
  
