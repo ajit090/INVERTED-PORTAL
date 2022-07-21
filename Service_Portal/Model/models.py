@@ -95,11 +95,20 @@ class Specification(models.Model):
     def __str__(self):
         return self.specification
 
+class Application(models.Model):
+    application = models.CharField(max_length=150)
+
+    class  Meta:  
+        verbose_name_plural  =  "APPLICATION"  
+
+    def __str__(self):
+        return self.application
+
 
 class Battery(models.Model):
     serial_no = models.CharField(max_length=100)
     specification = models.ForeignKey(Specification, on_delete=models.SET_NULL, null=True)
-    battery_type = models.CharField(max_length=50)
+    battery_type = models.ForeignKey(Application, on_delete=models.SET_NULL, null=True)
     oem =  models.ForeignKey(Oem, on_delete=models.SET_NULL, null=True)
     short_cell_description = models.CharField(max_length=150)
     long_cell_description = models.CharField(max_length=250)
